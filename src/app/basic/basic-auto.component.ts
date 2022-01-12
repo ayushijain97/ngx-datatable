@@ -43,6 +43,7 @@ export class BasicAutoComponent {
   constructor() {
     this.fetch(data => {
       this.rows = data;
+      console.log(this.rows);
       setTimeout(() => {
         this.loadingIndicator = false;
       }, 1500);
